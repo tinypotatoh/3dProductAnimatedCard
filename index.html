@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <tite>3D Product Card Design</tite>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <img src="images/logoBlack.png" class="logo">
+  </div>
+  <div class="container">
+    <div class="product">
+      <img src="images/shoes-1.png" id="frontImg">
+      <img src="images/shoes-2.png" id="backImg">
+      <div class="product-inner" id="productBox">
+        <div class="product-front">
+          <div class="product-top">
+          <h1>New Balance</h1>
+        </div>
+        
+
+        <div class="product-bottom">
+          <p>New Balance Women's</p>
+          <h2>Fresh Foam X 860v12</h2>
+          <h1>139 <span>$</span></h1>
+          <button type="button">Add To Cart</button>
+          <div class="color-select">
+            <div class="select-item">
+              <img src="images/shoes-1.png">
+            </div>
+
+            <div class="select-item">
+              <img src="images/shoes-2.png" onclick="flipRight()">
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="product-back">
+          <div class="product-top product-top2">
+            <h1>New Balance</h1>
+          </div>
+          
+  
+          <div class="product-bottom">
+            <p>New Balance Women's</p>
+            <h2>Fresh Foam X 860v12</h2>
+            <h1>139 <span>$</span></h1>
+            <button type="button">Add To Cart</button>
+            <div class="color-select">
+              <div class="select-item">
+                <img src="images/shoes-1.png" onclick="flipLeft()">
+              </div>
+  
+              <div class="select-item">
+                <img src="images/shoes-2.png">
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><p>Design by <a href="http://www.findrach.site">findrach.site</a> 2022</p></div>
+
+</body>
+
+</html>
